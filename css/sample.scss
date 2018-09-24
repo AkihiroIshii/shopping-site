@@ -38,7 +38,7 @@ header {
   .sp_navi_li, .pc_navi_li {
     list-style: none;
     margin: 0;
-    li {
+    .li_first {
       display: inline-block;
       margin: 0 5px 0 5px;
     }
@@ -51,6 +51,35 @@ header {
     right: 0;
     bottom: 0;
   }
+
+  #sp_menu {
+    cursor: pointer;
+  }
+  .sp_menu_toggle {
+    display: none;
+    margin: 0;
+    width: 140px;
+    position: absolute;
+    top: 120px;
+    right: 2%;
+    border: 1px solid $accent-color;
+    background-color: $sub-color;
+    z-index: 100;
+    
+    .li_second {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      a {
+        display: block;
+        padding: 10px 8px;
+        border-bottom: 1px solid $accent-color;
+        text-decoration: none;
+      }
+    }
+  }  
+  
 }
 //header
 
@@ -231,6 +260,24 @@ footer {
   }
 }
 //#main
+
+#cover_area {
+  .owl-dots {
+    margin: 0;
+    height: 16px;
+    text-align: left;
+    
+    .owl-dot span {
+      margin: 0 8px 0 0;
+      width: 30px;
+      height: 2px;
+      border-radius: 0;
+    }
+    .active span {
+      background-color: $accent-color;
+    }
+  }
+}
 
 #shopping_guide_area {
   .row {
