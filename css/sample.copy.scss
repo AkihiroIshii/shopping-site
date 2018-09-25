@@ -376,34 +376,26 @@ footer {
   
   .product-img {
     padding-bottom: 20px;
-    height: 360px;
     border-bottom: 1px solid $accent-color;
     
     .main-img {
-      width: 100%;
-      height: 100%;
-      background-color: $base-color;
-      @media (min-width:551px) {
-        width: 71.42857%;
-        float: left;
-      }
+      width: 71.42857%;
+      float: left;
     }
     .sub-img {
-      width: 100%;
+      width: 28.57143%;
       height: 100%;
-      @media (min-width:551px) {
-        width: 28.57143%;
-        float: left;
-      }
+      background-color: pink;
+      float: left;
+
       .sub-img-box {
-        margin: 0 1% 2% 0;
-        width: 19%;
-        height: 19%;
+        margin: 0 0 2% 2%;
+        width: 48%;
+        height: 46px;
         background-color: $base-color;
         float: left;
         @media (min-width:551px) {
-          margin: 0 0 2% 2%;
-          width: 48%;
+          height: 63px;
         }
       } 
     }
@@ -452,10 +444,7 @@ footer {
   }
   
   #add-to-cart {
-    text-align: center;
-    @media (min-width:551px) {
-      text-align: right;
-    }
+    text-align: right;
   }
   
   #product-description {

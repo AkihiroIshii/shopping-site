@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/sample.css">
 
   <!-- jQuery -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <!-- JavaScript -->
   <script src="js/products.js"></script>
@@ -46,13 +46,14 @@
           <ul class="sp_navi_li">
             <li class="li_first"><img class="u-max-full-width" src="images/top_sp/fb.png" alt="facebook" srcset="images/top_sp/fb@2x.png" /></li>
             <li class="li_first"><img class="u-max-full-width" src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png"/></li>
-            <li id="sp_menu" class="li_first"><img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu_icon" srcset="images/top_sp/menu_icon@2x.png"/></li>
-            <ul class="sp_menu_toggle">
-              <li class="li_second"><a href="">LOGIN</a></li>
-              <li class="li_second"><a href="">CART</a></li>
-              <li class="li_second"><a href="">MY PAGE</a></li>
-              <li class="li_second"><a href="">SHOPPING GUIDE</a></li>
-            </ul>
+            <li id="sp_menu" class="li_first"><img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="menu_icon" srcset="images/top_sp/menu_icon@2x.png"/>
+              <ul class="sp_menu_toggle">
+                <li class="li_second"><a href="">LOGIN</a></li>
+                <li class="li_second"><a href="">CART</a></li>
+                <li class="li_second"><a href="">MY PAGE</a></li>
+                <li class="li_second"><a href="">SHOPPING GUIDE</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
         <!-- sp_navi -->
@@ -87,17 +88,17 @@
             <div class="main-img">
               <img class="u-max-full-width" src="images/products/pro_img_01.jpg" alt="pro01" />
             </div>
-            <div class="sub-img clearfix">
+            <div class="sub-img">
               <div class="sub-img-box"><img class="u-max-full-width" src="images/products/pro_img_01.jpg" alt="pro01" /></div>
               <div class="sub-img-box"><img class="u-max-full-width" src="images/products/pro_img_02.jpg" alt="pro02" /></div>
               <div class="sub-img-box"><img class="u-max-full-width" src="images/products/pro_img_03.jpg" alt="pro03" /></div>
               <div class="sub-img-box"><img class="u-max-full-width" src="images/products/pro_img_04.jpg" alt="pro04" /></div>
               <div class="sub-img-box"><img class="u-max-full-width" src="images/products/pro_img_05.jpg" alt="pro05" /></div>
-              <div class="sub-img-box"></div>
-              <div class="sub-img-box"></div>
-              <div class="sub-img-box"></div>
-              <div class="sub-img-box"></div>
-              <div class="sub-img-box"></div>
+              <div class="sub-img-box empty-box"></div>
+              <div class="sub-img-box empty-box"></div>
+              <div class="sub-img-box empty-box"></div>
+              <div class="sub-img-box empty-box"></div>
+              <div class="sub-img-box empty-box"></div>
             </div>
           </div><!-- product-img -->
           <div id="color-size">
@@ -238,7 +239,7 @@
       </div>
       <div>
         <ul class="category-name">
-          <a href="list.html"><li>カテゴリー名</li></a>
+          <li><a href="list.html">カテゴリー名</a></li>
           <li>カテゴリー名</li>
           <li>カテゴリー名</li>
           <li>カテゴリー名</li>
