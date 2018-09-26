@@ -151,6 +151,10 @@ body {
       background-position: right 10px bottom 14px;
       margin: 2px 0;
       padding: 12px 14px;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
     }
   }
   
@@ -376,7 +380,6 @@ footer {
   
   .product-img {
     padding-bottom: 20px;
-    height: 360px;
     border-bottom: 1px solid $accent-color;
     
     .main-img {
@@ -384,28 +387,32 @@ footer {
       height: 100%;
       background-color: $base-color;
       @media (min-width:551px) {
-        width: 71.42857%;
+        width: 72%;
         float: left;
       }
     }
     .sub-img {
-      width: 100%;
-      height: 100%;
       @media (min-width:551px) {
-        width: 28.57143%;
+        width: 28%;
         float: left;
       }
+      .sp-img-row {
+        @media (max-width:550px) {
+          display: -webkit-flex;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;          
+        }
+      }
       .sub-img-box {
-        margin: 0 1% 2% 0;
-        width: 19%;
-        height: 19%;
-        background-color: $base-color;
         float: left;
+        margin: 1% 0;
+        width: 19%;
         @media (min-width:551px) {
           margin: 0 0 2% 2%;
           width: 48%;
         }
-      } 
+      }
     }
   }
   
